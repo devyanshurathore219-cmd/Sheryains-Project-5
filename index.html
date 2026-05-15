@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOMBOK | Holistic Health & Wellness</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://images.unsplash.com/photo-1477554193778-9562c28588c0?q=80&w=2070&auto=format&fit=crop">
+    
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION (Pure CSS Hack) -->
+    <input type="checkbox" id="menu-toggle">
+    <nav class="navbar">
+        <a href="#home" class="logo">LO</a>
+        
+        <!-- Desktop Nav -->
+        <div class="desktop-menu">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#articles" class="nav-link">Articles</a>
+            <a href="#subscribe" class="nav-btn">Subscribe</a>
+        </div>
+
+        <!-- Mobile Hamburger Icon -->
+        <label for="menu-toggle" class="menu-icon">
+            <i class="ri-menu-line"></i>
+        </label>
+    </nav>
+
+    <!-- Mobile Slide-out Menu -->
+    <div class="mobile-menu">
+        <label for="menu-toggle" class="close-icon">
+            <i class="ri-close-line"></i>
+        </label>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#articles" class="nav-link">Articles</a>
+        <a href="#subscribe" class="nav-btn">Subscribe</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <header id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">lombok</h1>
+            <h3 class="hero-subtitle">holistic health & more</h3>
+            <div class="hero-divider"></div>
+        </div>
+    </header>
+
+    <!-- LATEST ARTICLES SECTION -->
+    <section id="articles" class="articles-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">latest articles</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="articles-grid">
+                <!-- Card 1 -->
+                <article class="article-card">
+                    <div class="article-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1511936606692-5e0d73f6b638?q=80&w=800&auto=format&fit=crop" alt="Mindfulness" class="article-image">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-card-divider"></div>
+                        <h3 class="article-title">How to use mindfulness<br>in your everyday life</h3>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="article-card">
+                    <div class="article-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1624817670169-57a1245cf3f1?q=80&w=800&auto=format&fit=crop" alt="Wellness routines" class="article-image">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-card-divider"></div>
+                        <h3 class="article-title">Creating morning habits<br>for a clearer mind</h3>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="article-card">
+                    <div class="article-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1536431311719-398b6704d4cc?q=80&w=800&auto=format&fit=crop" alt="Healthy eating" class="article-image">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-card-divider"></div>
+                        <h3 class="article-title">The truth about holistic<br>nutrition approaches</h3>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+        <img src="https://images.unsplash.com/photo-1621849400072-f554417f7051?q=80&w=1200&auto=format&fit=crop" alt="Holistic massage therapy" class="about-image">
+        
+        <div class="about-content">
+            <h2 class="section-title">About</h2>
+            <div class="section-divider"></div>
+            <p class="about-text">
+                Holistic health is an approach to healthcare that considers the whole person—body, mind, spirit, and emotions—in the pursuit of optimal health and wellness. It emphasizes the interconnectedness of these aspects and seeks to address imbalances or disharmonies that may arise within them.
+            </p>
+            <p class="about-text">
+                Holistic health practitioners may include naturopathic doctors, integrative medicine physicians, holistic nurses, chiropractors, acupuncturists, nutritionists, and various types of therapists (such as massage therapists, psychotherapists, and energy healers).
+            </p>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section id="subscribe" class="newsletter-section">
+        <div class="container">
+            <h2 class="section-title">Subscribe</h2>
+            <h3 class="newsletter-subtitle">Sign-Up to our Newsletter</h3>
+            
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required class="newsletter-input">
+                <button type="submit" class="newsletter-submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="ri-instagram-line"></i></a>
+                <a href="#" class="social-icon"><i class="ri-facebook-circle-line"></i></a>
+                <a href="#" class="social-icon"><i class="ri-twitter-line"></i></a>
+                <a href="#" class="social-icon"><i class="ri-github-fill"></i></a>
+            </div>
+
+            <div class="footer-links">
+                <a href="#about" class="footer-link">About</a>
+                <a href="#articles" class="footer-link">Articles</a>
+                <a href="#subscribe" class="footer-link">Subscribe</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
